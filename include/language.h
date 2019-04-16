@@ -242,6 +242,7 @@ enum lang_codes
     DRAWTOOLS_LANGUAGE_13,
     DRAWTOOLS_LANGUAGE_14,
     DRAWTOOLS_LANGUAGE_15,
+    DRAWTOOLS_LANGUAGE_16,
 
     // Install .PKG
     PKG_HEADER,
@@ -283,7 +284,7 @@ enum lang_codes
 
 };
 
-#define LANGCOUNT 14
+#define LANGCOUNT 15
 
 extern char * language[];
 

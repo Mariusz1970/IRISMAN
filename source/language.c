@@ -34,19 +34,20 @@
 #else
 
 #include "language_ini_en_bin.h"
-#include "language_ini_da_bin.h"
-#include "language_ini_kr_bin.h"
 #include "language_ini_sp_bin.h"
 #include "language_ini_fr_bin.h"
 #include "language_ini_it_bin.h"
 #include "language_ini_nw_bin.h"
+#include "language_ini_gm_bin.h"
+#include "language_ini_por_bin.h"
 #include "language_ini_ps_bin.h"
 #include "language_ini_chs_bin.h"
 #include "language_ini_cht_bin.h"
-#include "language_ini_gm_bin.h"
-#include "language_ini_por_bin.h"
-#include "language_ini_gr_bin.h"
 #include "language_ini_fi_bin.h"
+#include "language_ini_gr_bin.h"
+#include "language_ini_kr_bin.h"
+#include "language_ini_da_bin.h"
+#include "language_ini_pl_bin.h"
 
 #endif
 
@@ -211,7 +212,8 @@ t_lngstr lang_strings[] =
     { DRAWTOOLS_LANGUAGE_12, "DRAWTOOLS_LANGUAGE_12"   , "Suomi"},
     { DRAWTOOLS_LANGUAGE_13, "DRAWTOOLS_LANGUAGE_13"   , "한국어"},
     { DRAWTOOLS_LANGUAGE_14, "DRAWTOOLS_LANGUAGE_14"   , "Dansk"},
-    { DRAWTOOLS_LANGUAGE_15, "DRAWTOOLS_LANGUAGE_15"   , "Custom (from file)"},
+    { DRAWTOOLS_LANGUAGE_15, "DRAWTOOLS_LANGUAGE_15"   , "Polskie"},
+    { DRAWTOOLS_LANGUAGE_16, "DRAWTOOLS_LANGUAGE_16"   , "Custom (from file)"},
 
     { DRAWTOOLS_COPYFROM, "DRAWTOOLS_COPYFROM"     , "Copy from /dev_usb/iris to Iris folder"},
     { DRAWTOOLS_WITHBDVD, "DRAWTOOLS_WITHBDVD"     , "With BDVD Controller"},
@@ -404,59 +406,63 @@ void open_language(int lang, char * filename)
 
         switch(lang)
         {
-            case 1: // sp
+            case 1: // sp - DRAWTOOLS_LANGUAGE_2: Español
                 file_bin = (char *) language_ini_sp_bin;
                 file_size = language_ini_sp_bin_size;
                 break;
-            case 2: // fr
+            case 2: // fr - DRAWTOOLS_LANGUAGE_3: Français
                 file_bin = (char *) language_ini_fr_bin;
                 file_size = language_ini_fr_bin_size;
                 break;
-            case 3: // it
+            case 3: // it - DRAWTOOLS_LANGUAGE_4: Italiano
                 file_bin = (char *) language_ini_it_bin;
                 file_size = language_ini_it_bin_size;
                 break;
-            case 4: // nw
+            case 4: // nw - DRAWTOOLS_LANGUAGE_5: Norsk
                 file_bin = (char *) language_ini_nw_bin;
                 file_size = language_ini_nw_bin_size;
                 break;
-            case 5: // gm
+            case 5: // gm - DRAWTOOLS_LANGUAGE_6: Deutsch
                 file_bin = (char *) language_ini_gm_bin;
                 file_size = language_ini_gm_bin_size;
                 break;
-            case 6: // por
+            case 6: // por - DRAWTOOLS_LANGUAGE_7: Português
                 file_bin = (char *) language_ini_por_bin;
                 file_size = language_ini_por_bin_size;
                 break;
-            case 7: // ps
+            case 7: // ps - DRAWTOOLS_LANGUAGE_8: Persian
                 file_bin = (char *) language_ini_ps_bin;
                 file_size = language_ini_ps_bin_size;
                 break;
-            case 8: // chs
+            case 8: // chs - DRAWTOOLS_LANGUAGE_9: Chinese Simplified
                 file_bin = (char *) language_ini_chs_bin;
                 file_size = language_ini_chs_bin_size;
                 break;
-            case 9: // cht
+            case 9: // cht - DRAWTOOLS_LANGUAGE_10: Chinese Traditional
                 file_bin = (char *) language_ini_cht_bin;
                 file_size = language_ini_cht_bin_size;
                 break;
-            case 10: // gr
+            case 10: // gr - DRAWTOOLS_LANGUAGE_11: Ελληνικός
                 file_bin = (char *) language_ini_gr_bin;
                 file_size = language_ini_gr_bin_size;
                 break;
-            case 11: // fi
+            case 11: // fi - DRAWTOOLS_LANGUAGE_12: Suomi
                 file_bin = (char *) language_ini_fi_bin;
                 file_size = language_ini_fi_bin_size;
                 break;
-            case 12: // kr
+            case 12: // kr - DRAWTOOLS_LANGUAGE_12: 한국어
                 file_bin = (char *) language_ini_kr_bin;
                 file_size = language_ini_kr_bin_size;
                 break;
-            case 13: // da
+            case 13: // da - DRAWTOOLS_LANGUAGE_14: Dansk
                 file_bin = (char *) language_ini_da_bin;
                 file_size = language_ini_da_bin_size;
                 break;
-            default: // en
+            case 14: // da - DRAWTOOLS_LANGUAGE_15: Polskie
+                file_bin = (char *) language_ini_pl_bin;
+                file_size = language_ini_da_bin_size;
+                break;
+            default: // en - DRAWTOOLS_LANGUAGE_1
                 file_bin = (char *) language_ini_en_bin;
                 file_size = language_ini_en_bin_size;
                 break;

@@ -13104,8 +13104,8 @@ void draw_toolsoptions(float x, float y)
     y2+= 52;
 
     DrawButton1_UTF8(box_left, y2, 520, (noBDVD == MODE_WITHBDVD) ? language[DRAWTOOLS_WITHBDVD] :
-                                               (noBDVD == MODE_DISCLESS) ? language[DRAWTOOLS_NOBDVD2]  :
-                                                                           language[DRAWTOOLS_NOBDVD], (flash && (select_option == 4)));
+                                        (noBDVD == MODE_DISCLESS) ? language[DRAWTOOLS_NOBDVD2]  :
+                                                                    language[DRAWTOOLS_NOBDVD], (flash && (select_option == 4)));
 
     y2+= 52;
 

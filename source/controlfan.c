@@ -822,7 +822,7 @@ void load_controlfan_config()
     char * mem = LoadFile((void *) (FANCONTROL_PATH), &file_size);
 
     n = sizeof(temp_control) + sizeof(speed_table) + sizeof(wakeup_time) + sizeof(fan_mode);
-    if(!mem || n != file_size) {if(mem) free(mem); set_fan_mode(0); return;}
+    if(!mem || n != file_size) {if(mem) free(mem); set_fan_mode(FANCTRL_PAYLOAD); return;}
 
     n = 0;
     memcpy((void *) temp_control, (void *) mem, sizeof(temp_control));

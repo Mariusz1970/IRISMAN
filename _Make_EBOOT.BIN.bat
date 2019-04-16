@@ -14,13 +14,15 @@ make npdrm
 if exist EBOOT.BIN del EBOOT.BIN
 if exist RELOAD.SELF del RELOAD.SELF
 if exist iris_manager.self del iris_manager.self
+if exist IRISMAN.elf del IRISMAN.elf
+if exist IRISMAN.self ren IRISMAN.self RELOAD.SELF
 if exist IRISMAN-master.elf del IRISMAN-master.elf
 if exist IRISMAN-master.self ren IRISMAN-master.self RELOAD.SELF
 
 :auto-upload
 if not exist RELOAD.SELF goto quit
 
-rem goto quit
+goto quit
 
 echo Uploading...
 echo open ps3>upload.tmp
