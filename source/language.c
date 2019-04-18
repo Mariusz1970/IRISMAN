@@ -212,7 +212,7 @@ t_lngstr lang_strings[] =
     { DRAWTOOLS_LANGUAGE_12, "DRAWTOOLS_LANGUAGE_12"   , "Suomi"},
     { DRAWTOOLS_LANGUAGE_13, "DRAWTOOLS_LANGUAGE_13"   , "한국어"},
     { DRAWTOOLS_LANGUAGE_14, "DRAWTOOLS_LANGUAGE_14"   , "Dansk"},
-    { DRAWTOOLS_LANGUAGE_15, "DRAWTOOLS_LANGUAGE_15"   , "Polskie"},
+    { DRAWTOOLS_LANGUAGE_15, "DRAWTOOLS_LANGUAGE_15"   , "Polski"},
     { DRAWTOOLS_LANGUAGE_16, "DRAWTOOLS_LANGUAGE_16"   , "Custom (from file)"},
 
     { DRAWTOOLS_COPYFROM, "DRAWTOOLS_COPYFROM"     , "Copy from /dev_usb/iris to Iris folder"},
@@ -458,7 +458,7 @@ void open_language(int lang, char * filename)
                 file_bin = (char *) language_ini_da_bin;
                 file_size = language_ini_da_bin_size;
                 break;
-            case 14: // da - DRAWTOOLS_LANGUAGE_15: Polskie
+            case 14: // da - DRAWTOOLS_LANGUAGE_15: Polski
                 file_bin = (char *) language_ini_pl_bin;
                 file_size = language_ini_da_bin_size;
                 break;
